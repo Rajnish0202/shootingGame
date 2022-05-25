@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Macondo", cursive;
+}
+
+.game_ground {
+  padding: 10px 15px;
+  background: #f3f3f3;
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  color: #000;
+}
+
+.heading span {
+  color: #f15025;
+}
+
+.battle_ground {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 2rem;
+}
+
+.battle_ground .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.battle_ground .hero p {
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #f15025;
+}
+
+.battle_ground .hero p span {
+  color: #33ccff;
+}
+
+button {
+  padding: 15px 20px;
+  background: #33ccff;
+  border: none;
+  font-size: 30px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: all 0.3s linear;
+  background: transparent;
+  color: #33ccff;
+  border: 2px solid #33ccff;
+}
+
+.battle_ground img {
+  width: 200px;
+}
+
+.score {
+  width: 100%;
+  padding: 20px;
+}
+
+.score .subheading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #f15025;
+}
+
+.score .players {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.score .player {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  padding: 10px 0;
+}
+
+.score .player p {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #33ccff;
+}
+
+.player .points {
+  color: #f15025 !important;
+}
+
+.message {
+  display: none;
+}
+
+.message.active {
+  display: initial;
+}

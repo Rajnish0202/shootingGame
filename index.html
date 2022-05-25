@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inkoop Shooting Game</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="game_ground">
+      <h1 class="heading">Shooting <span>Game</span></h1>
+      <div class="battle_ground">
+        <div class="hero1 hero">
+          <img src="./image/shoot left.png" alt="" />
+          <p class="fire">Power: <span id="power1">0</span></p>
+          <p class="fire">Health: <span id="health1">100</span></p>
+        </div>
+        <div class="button">
+          <button onclick="shoot()">Start Game</button>
+        </div>
+        <div class="hero2 hero">
+          <img src="./image/shoot right.png" alt="" />
+          <p class="fire">Power: <span id="power2">0</span></p>
+          <p class="fire">Health: <span id="health2">100</span></p>
+        </div>
+      </div>
+      <div class="score game1">
+        <h2 class="subheading">Game</h2>
+
+        <div class="players">
+          <div class="player1 player">
+            <p>player1</p>
+            <p class="points" id="point1">0</p>
+            <p class="message" id="win1">Player 1 Won!</p>
+          </div>
+          <div class="player1 player">
+            <p>player2</p>
+            <p class="points" id="point2">0</p>
+            <p class="message" id="win2">Player 2 Won!</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="score game2">
+        <h2 class="subheading">Game 2</h2>
+
+        <div class="players">
+          <div class="player1 player">
+            <p>player1</p>
+            <p class="points" id="point1">0</p>
+            <p class="message" id="win1">Player 1 Won!</p>
+          </div>
+          <div class="player1 player">
+            <p>player2</p>
+            <p class="points" id="point2">0</p>
+            <p class="message" id="win2">Player 2 Won!</p>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- JS LINK -->
+    <script src="./app.js"></script>
+  </body>
+</html>
